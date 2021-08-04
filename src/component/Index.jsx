@@ -105,7 +105,7 @@ function BuildType0Detail(props) {
     <div className="title2" key="title">
       <div className="raceno">場次</div>
       <div className="hnum">馬號</div>
-      <div className="hname">馬名</div>
+      <div className="hname">馬名()</div>
       <div className="name">{typeof data.stable !== 'undefined' ? '練馬師' : '騎師'}</div>
       <div className="winodds">賠率</div>
       <div className="orderE">名次</div>
