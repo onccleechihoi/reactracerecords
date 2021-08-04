@@ -1,0 +1,24 @@
+.btBASE {
+  width: '100px';
+  height: '20px';
+  cursor: 'pointer';
+  border: '1px solid black';
+  color: black;
+  textAlign: 'center';
+}
+
+.btBASE .red {
+  background: red;
+  color: white;
+}
+
+.btBASE .green {
+  background: green;
+  color: white;
+}
+
+.btBASE:hover {
+  background: orange;
+  color: 'white';
+}
+/*# sourceMappingURL=button.css.map */

@@ -1,0 +1,371 @@
+@charset "UTF-8";
+body {
+  font-family: 微軟正黑體, Arial, Helvetica, sans-serif !important;
+  background-size: 100%;
+  background-repeat: repeat;
+  margin: 0px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.menu1 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu1 > div {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 2%;
+}
+
+.menu1 > div > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.menu1 .type {
+  font-size: 6vw;
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.menu1 .type .background {
+  width: 100%;
+}
+
+.menu1 .type.jockey {
+  background-image: url("~@img/bt_jockey.png");
+}
+
+.menu1 .type.stable {
+  background-image: url("~@img/bt_stable.png");
+}
+
+.menu1 .area {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  font-size: 3vw;
+  line-height: 6vw;
+  padding-right: 4%;
+}
+
+.menu1 .area .func > div {
+  text-align: center;
+  border-top: 1px solid #999999;
+  border-left: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  margin-top: 35%;
+}
+
+.menu1 .area .func.on > div {
+  background: #008cd7;
+  color: white;
+}
+
+.menu1 .area.hide {
+  visibility: hidden;
+}
+
+.menu2 {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.menu2 .game_type {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-size: 4vw;
+}
+
+.menu2 .game_type > div {
+  border: 1px solid #999999;
+  color: #999999;
+  padding: 2px;
+  margin: auto;
+  display: inline-block;
+}
+
+.menu2 .game_type .on {
+  color: #008cd7;
+}
+
+.orangeColor {
+  color: #ff9933;
+}
+
+.redOn {
+  color: white;
+  background: red;
+}
+
+.blackOn {
+  background: black;
+  color: white;
+}
+
+.grayOn {
+  color: white;
+  background: #999999;
+}
+
+.blueOn {
+  color: white;
+  background: #008cd7;
+}
+
+.briefpage .descriptiontitle {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 3px 10% 5px 0px;
+  text-align: right;
+  font-size: 4vw;
+}
+
+.briefpage .briefdata {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4vw;
+  border-bottom: 1px solid black;
+  padding: 1% 0;
+}
+
+.briefpage .briefdata .name {
+  padding: 1%;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  line-height: 5vw;
+}
+
+.briefpage .briefdata .arrow {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.briefpage .briefdata .main {
+  -webkit-box-flex: 16;
+      -ms-flex: 16;
+          flex: 16;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.briefpage .briefdata .main .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-radius: 10px;
+  margin: 1%;
+  padding: 1%;
+}
+
+.briefpage .livecontent {
+  border-top: 1px solid #999999;
+  padding-top: 10px;
+  padding: 0 2%;
+}
+
+.briefpage .livecontent .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  font-size: 3.5vw;
+  font-weight: bold;
+}
+
+.briefpage .livecontent .item > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.briefpage .livecontent .item .racename {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  line-height: 5vw;
+  text-align: left;
+}
+
+.briefpage .livecontent .item.itemrace {
+  border-top: 1px solid black;
+}
+
+.briefpage .livecontent .item.itemrace .num .core {
+  background: #999999;
+  color: white;
+}
+
+.briefpage .livecontent .item .num {
+  margin-right: 1%;
+  font-size: 4vw;
+  line-height: 4vw;
+}
+
+.briefpage .livecontent .item .num > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.briefpage .livecontent .item .num .core {
+  border-radius: 8px;
+  padding: 17%;
+}
+
+.briefpage .livecontent .item .num .core.place {
+  background: #008cd7;
+}
+
+.briefpage .livecontent .item .num .core.win {
+  background: #e70013;
+}
+
+.briefpage .livecontent .item .num .core.null {
+  background: white;
+}
+
+.briefpage .livecontent .item .num .core.notrace {
+  background: green;
+}
+
+.briefpage .livecontent .item.title .num {
+  margin-right: 1%;
+}
+
+.briefpage .livecontent .item.title .num .core {
+  background: #f0f0f0;
+}
+
+.detailpage .main .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-bottom: 15px;
+  background: #fdebd7;
+  font-size: 5vw;
+  padding: 1%;
+}
+
+.detailpage .main .content .date {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.detailpage .main .content .racearea {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.detailpage .main .content .racearea img {
+  width: 5vw;
+  vertical-align: top;
+}
+
+.detailpage .main .content .place, .detailpage .main .content .remark {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.detailpage .main .content .arrow {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.detailpage .main .content2, .detailpage .main .title2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.detailpage .main .content2 > div, .detailpage .main .title2 > div {
+  margin-right: 1px;
+  padding: 1% 0;
+}
+
+.detailpage .main .title2 > div {
+  background: brown;
+  color: white;
+}
+
+.detailpage .main .content2:nth-child(odd) > div {
+  background: #f4f4f4;
+}
+
+.detailpage .main .content2:nth-child(even) > div {
+  background: #fdebd7;
+}
+
+.detailpage .main .content2 .hname, .detailpage .main .content2 .name, .detailpage .main .title2 .hname, .detailpage .main .title2 .name {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.detailpage .main .content2 .raceno, .detailpage .main .title2 .raceno, .detailpage .main .content2 .hnum, .detailpage .main .title2 .hnum, .detailpage .main .content2 .winodds, .detailpage .main .content2 .orderE, .detailpage .main .title2 .winodds, .detailpage .main .title2 .orderE {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.detailpage .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 8vw;
+  margin: 3%;
+  font-weight: bold;
+}
+
+.backarrow {
+  padding: 1%;
+}
+
+.backarrow img {
+  width: 7vw;
+}
+
+.racearrow {
+  color: #008cd7;
+  background: url(~@img/bt_down.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.typejockey {
+  position: absolute;
+  width: 25%;
+  height: 80%;
+}
+/*# sourceMappingURL=all.css.map */

@@ -1,0 +1,275 @@
+
+body {
+	font-family:微軟正黑體, Arial, Helvetica, sans-serif!important;
+	background-size: 100%;
+    background-repeat: repeat;
+	margin:0px;
+}
+
+.container {
+	display: block;
+	position:relative;
+	width: 100%;
+}
+
+.menu1 {
+	position: relative;
+	display: flex;
+	> div {
+		display: inline-flex;
+		padding: 2%;
+		>div {
+			flex: 1;
+		}
+	}
+	.type {
+		font-size: 6vw;
+		flex: 6;
+		background-size:100%;
+		background-repeat: no-repeat;
+		.background {
+			width: 100%;
+		}
+		&.jockey {
+			background-image: url("~@img/bt_jockey.png");
+		}
+		&.stable {
+			background-image: url("~@img/bt_stable.png");
+		}
+	}
+	.area {
+		flex: 4;
+		font-size: 3vw;
+		line-height: 6vw;
+		padding-right: 4%;
+		.func >div {
+			text-align: center;
+			border-top: 1px solid #999999;
+			border-left: 1px solid #999999;
+			border-bottom: 1px solid #999999;
+			margin-top: 35%;
+		}
+		.func.on >div {
+			background: #008cd7;
+			color: white;
+		}
+		&.hide {
+			visibility: hidden;
+		}
+	}
+}
+
+.menu2 {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-bottom: 10px;
+	.game_type {
+		width: 50%;
+		margin: auto;
+		text-align: center;
+		font-size: 4vw;
+		>div {
+			border: 1px solid #999999;
+			color: #999999;
+			padding: 2px;
+			margin: auto;
+			display: inline-block;
+		}
+		.on {
+			color: #008cd7;
+		}
+	}
+}
+.orangeColor {
+	color: #ff9933;
+}
+.redOn {
+	color: white;
+	background: red;
+}
+.blackOn {
+	background: black;
+	color: white;
+}
+.grayOn {
+	color: white;
+	background: #999999;
+}	
+.blueOn {
+	color: white;
+	background: #008cd7;
+}
+.briefpage {
+	.descriptiontitle {
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		padding: 3px 10% 5px 0px;
+		text-align: right;
+		font-size: 4vw;
+	}
+	.briefdata {
+		display: flex;
+		text-align: center;
+		font-weight: bold;
+		font-size: 4vw;
+		border-bottom: 1px solid black;
+		padding: 1% 0;
+		.name {
+			padding: 1%;
+			flex: 3;
+			line-height: 5vw;
+		}
+		.arrow {
+			flex: 1;
+		}
+		.main {
+			flex: 16;
+			display: flex;
+			.box {
+				flex: 1;
+				border-radius: 10px;
+				margin: 1%;
+				padding: 1%;
+			}
+		}
+	}
+	.livecontent {
+		border-top: 1px solid #999999;
+		padding-top: 10px;
+		padding: 0 2%;
+		.item {
+			display: flex;
+			text-align: center;
+			padding-top: 2vw;
+			padding-bottom: 2vw;
+			font-size: 3.5vw;
+			font-weight: bold;
+			.num {
+				margin-right: 1%;
+				font-size: 4vw;
+				line-height: 4vw;
+				>div {
+					flex: 1;
+				}
+				.racename {
+					flex:3;
+					line-height: 5vw;
+					text-align: left;
+				}
+				.core {
+					border-radius: 8px;
+					padding: 17%;
+				}
+				.core.place {
+					background: #008cd7;
+				}
+				.core.win {
+					background: #e70013;
+				}
+				.core.null {
+					background: white;
+				}
+				.core.notrace {
+					background: green;
+				}
+			}
+			&.title {
+				.num {
+					margin-right: 1%;
+					.core {
+						background: #f0f0f0;
+					}
+				}
+			}
+			
+			&.itemrace {
+				border-top: 1px solid black;
+				.num .core {
+					background: #999999;
+					color: white;
+				}
+			}
+			
+		}
+	}
+}
+.detailpage {
+	.main {
+		.content {
+			display: flex;
+			text-align: center;
+			margin-bottom: 15px;
+			background: rgb(253,235,215);
+			font-size: 5vw;
+			padding: 1%;
+			.date {
+				flex: 3;
+			}
+			.racearea {
+				flex: 3;
+				img {
+					width: 5vw;
+					vertical-align: top;
+				}
+			}
+			.place, .remark {
+				flex: 2;
+			}
+			.arrow {
+				flex : 1;
+			}
+		}
+		.content2, .title2 {
+			display: flex;
+			text-align: center;
+		}
+		.content2 >div,.title2 >div {
+			margin-right: 1px;
+			padding: 1% 0;
+		}
+		.title2 >div {
+			background: brown;
+			color: white;
+		}
+		.content2:nth-child(odd) >div {
+			background:rgb(244,244,244);
+		}
+		.content2:nth-child(even) >div {
+			background: rgb(253,235,215);
+		}
+		.content2 .hname, .content2 .name, .title2 .hname, .title2 .name {
+			flex: 3;
+		} 
+		.content2 .raceno, .title2 .raceno, .content2 .hnum, .title2 .hnum,	.content2 .winodds, .content2 .orderE, .title2 .winodds, .title2 .orderE {
+			flex : 2;
+		}
+	}
+	.title {
+		display: flex;
+		font-size: 8vw;
+		margin: 3%;
+		font-weight: bold;
+	}
+}
+
+.backarrow {
+	padding: 1%;
+	img {
+		width: 7vw;
+	}
+}
+
+.racearrow {
+	color: #008cd7;
+	background: url(~@img/bt_down.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.typejockey {
+	position: absolute;
+	width: 25%;
+	height:80%;
+}
+

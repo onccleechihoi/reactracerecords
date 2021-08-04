@@ -1,0 +1,21 @@
+.btBASE {
+	width:'100px';
+	height:'20px';
+	cursor: 'pointer';
+	border: '1px solid black';
+	color: black;
+	textAlign: 'center';
+	.red {
+		background: red;
+		color: white;
+	}
+	.green {
+		background: green;
+		color: white;
+	}
+	&:hover {
+		background: orange;
+		color: 'white'
+	}
+	
+}
